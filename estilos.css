@@ -1,0 +1,378 @@
+/*! CSS Used from: https://www.livegoodtour.com/htdocs/l1/bootstrap.css */
+*,::after,::before{box-sizing:border-box;}
+p{margin-top:0;margin-bottom:1.5rem;}
+label{display:inline-block;margin-bottom:.5rem;}
+input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+input{overflow:visible;}
+[type=submit]{-webkit-appearance:button;}
+.col-lg-4,.col-xl-4{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:992px){
+.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+}
+@media (min-width:1200px){
+.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+}
+.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media screen and (prefers-reduced-motion:reduce){
+.form-control{transition:none;}
+}
+.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.form-control::placeholder{color:#6c757d;opacity:1;}
+.form-control:disabled{background-color:#e9ecef;opacity:1;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+p{orphans:3;widows:3;}
+}
+/*! CSS Used from: https://www.livegoodtour.com/htdocs/l1/style.css */
+.form-section{position:relative;background-color:white;border:1px solid #047dda;border-radius:15px;margin-bottom:20px;margin-top:-15px;padding-left:0px;padding-right:0px;}
+@media (min-width: 992px){
+.form-section{margin-bottom:0;}
+}
+.form-section-top{background-color:#047dda;-webkit-border-top-left-radius:15px;-webkit-border-top-right-radius:15px;-moz-border-radius-topleft:15px;-moz-border-radius-topright:15px;border-top-left-radius:15px;border-top-right-radius:15px;color:white;font-size:16px;line-height:22px;padding:15px;text-align:center;width:100%;}
+.form-section-title{font-size:32px;font-family:'Neue Helvetica W05_79 Comp Bol';line-height:1;margin:0 0 5px 0;padding:0;}
+@media (min-width: 1200px){
+.form-section-title{font-size:36px;}
+}
+.form-section-title-lg-center{display:block;font-size:36px;text-align:center;}
+@media (min-width: 1200px){
+.form-section-title-lg-center{font-size:40px;}
+}
+.form-section-top-disclaimer{font-size:16px;margin-bottom:0;}
+@media (min-width: 1200px){
+.form-section-top-disclaimer{font-size:18px;}
+}
+.main-form{padding:15px;}
+.main-form input{margin-bottom:10px;}
+input[type=submit]{background-image:linear-gradient(to bottom, #f25b25, #d33d08);border:2px solid #bf3200;color:white;font-family:'Helvetica Neue LT W05_97 Blk C';font-size:24px;margin-top:15px;text-transform:uppercase;width:100%;}
+@media (min-width: 992px){
+input[type=submit]{font-size:20px;}
+}
+@media (min-width: 1200px){
+input[type=submit]{font-size:24px;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:"Neue Helvetica W05_79 Comp Bol";src:url("https://fast.fonts.net/dv2/14/58583898-0494-4579-bafb-d504aa8cc480.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+@font-face{font-family:"Helvetica Neue LT W05_97 Blk C";src:url("https://fast.fonts.net/dv2/14/f2f49a5e-567d-4dfa-8152-c28c8f60c84e.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+/*! CSS Used from: https://www.livegoodtour.com/htdocs/l1/bootstrap.css */
+:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#66a92f;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#66a92f;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}
+*,::after,::before{box-sizing:border-box;}
+html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent;}
+header{display:block;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff;}
+[tabindex="-1"]:focus{outline:0!important;}
+hr{box-sizing:content-box;height:0;overflow:visible;}
+h1,h5{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1.5rem;}
+ul{margin-top:0;margin-bottom:1rem;}
+strong{font-weight:bolder;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+img{vertical-align:middle;border-style:none;}
+svg:not(:root){overflow:hidden;}
+label{display:inline-block;margin-bottom:.5rem;}
+button{border-radius:0;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button,input{overflow:visible;}
+button{text-transform:none;}
+[type=submit],button,html [type=button]{-webkit-appearance:button;}
+h1,h5{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
+h1{font-size:2.5rem;}
+h5{font-size:1.25rem;}
+hr{margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0,0,0,.1);}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1170px;}
+}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-xl-3,.col-xl-4,.col-xl-5{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:992px){
+.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
+.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}
+.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+@media (min-width:1200px){
+.col-xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
+.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+.col-xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}
+}
+.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media screen and (prefers-reduced-motion:reduce){
+.form-control{transition:none;}
+}
+.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.form-control::placeholder{color:#6c757d;opacity:1;}
+.form-control:disabled{background-color:#e9ecef;opacity:1;}
+.fade{transition:opacity .15s linear;}
+@media screen and (prefers-reduced-motion:reduce){
+.fade{transition:none;}
+}
+.fade:not(.show){opacity:0;}
+.close{float:right;font-size:1.5rem;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;}
+.close:focus,.close:hover{color:#000;text-decoration:none;opacity:.75;}
+.close:not(:disabled):not(.disabled){cursor:pointer;}
+button.close{padding:0;background-color:transparent;border:0;-webkit-appearance:none;}
+.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:none;overflow:hidden;outline:0;}
+.modal-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;}
+.modal.fade .modal-dialog{transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;transition:transform .3s ease-out,-webkit-transform .3s ease-out;-webkit-transform:translate(0,-25%);transform:translate(0,-25%);}
+@media screen and (prefers-reduced-motion:reduce){
+.modal.fade .modal-dialog{transition:none;}
+}
+.modal-dialog-centered{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;min-height:calc(100% - (.5rem * 2));}
+.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:100%;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0;}
+.modal-header{display:-ms-flexbox;display:flex;-ms-flex-align:start;align-items:flex-start;-ms-flex-pack:justify;justify-content:space-between;padding:1rem;border-bottom:1px solid #e9ecef;border-top-left-radius:.3rem;border-top-right-radius:.3rem;}
+.modal-header .close{padding:1rem;margin:-1rem -1rem -1rem auto;}
+.modal-title{margin-bottom:0;line-height:1.5;}
+.modal-body{position:relative;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem;}
+@media (min-width:576px){
+.modal-dialog{max-width:500px;margin:1.75rem auto;}
+.modal-dialog-centered{min-height:calc(100% - (1.75rem * 2));}
+}
+@media (min-width:992px){
+.modal-lg{max-width:800px;}
+}
+.font-weight-normal{font-weight:400!important;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+p{orphans:3;widows:3;}
+body{min-width:992px!important;}
+.container{min-width:992px!important;}
+}
+/*! CSS Used from: https://www.livegoodtour.com/htdocs/l1/style.css */
+.header{background-image:url(https://www.livegoodtour.com/images/l1/header-background.png);background-size:cover;padding:10px 0;}
+@media (min-width: 768px){
+.header{height:100px;}
+}
+@media (min-width: 992px){
+.header{height:120px;}
+}
+@media (min-width: 1200px){
+.header{height:140px;}
+}
+@media (min-width: 768px){
+.header > .container{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;}
+}
+.header-logo{margin-bottom:15px;text-align:center;}
+@media (min-width: 768px){
+.header-logo{margin:0;}
+}
+.header-logo img{height:auto;margin-left:16px;width:210px;}
+@media (min-width: 992px){
+.header-logo img{margin:0;width:280px;}
+}
+.header-title{color:#171d4d;font-family:'Neue Helvetica W05_79 Comp Bol';font-size:24px;line-height:1.2;margin-bottom:10px;text-transform:uppercase;text-align:center;}
+@media (min-width: 481px){
+.header-title{font-size:30px;}
+}
+@media (min-width: 768px){
+.header-title{font-size:32px;margin-bottom:0;}
+}
+@media (min-width: 992px){
+.header-title{font-size:36px;}
+}
+@media (min-width: 1200px){
+.header-title{font-size:42px;}
+}
+.sales-banner-1{position:relative;background:url(https://www.livegoodtour.com/images/l1/couple-running.png) right bottom no-repeat, url(https://www.livegoodtour.com/images/l1/landing-banner-1.jpg) left top no-repeat;background-size:contain, cover;height:557px;}
+@media (max-width: 1750px){
+.sales-banner-1{background:url(https://www.livegoodtour.com/images/l1/landing-banner-1.jpg) left top no-repeat;background-size:cover;}
+}
+@media (max-width: 768px){
+.sales-banner-1{background-position-x:-150px;height:300px;}
+}
+@media (max-width: 630px){
+.sales-banner-1{background-position-x:-120px;height:250px;}
+}
+@media (max-width: 481px){
+.sales-banner-1{background-position-x:-330px;text-align:center;}
+}
+.sales-banner-2{background:url('https://www.livegoodtour.com/images/l1/blue_bar.jpg');background-size:cover;color:#0d2646;font-size:24px;line-height:1.2;min-height:122px;padding:20px;text-align:center;}
+@media (min-width: 768px){
+.sales-banner-2{font-size:28px;min-height:122px;}
+}
+@media (min-width: 992px){
+.sales-banner-2{min-height:100px;}
+}
+@media (min-width: 1200px){
+.sales-banner-2{font-size:32px;min-height:122px;text-align:right;}
+}
+.sales-banner-2-text-container{margin:0;padding:0;}
+@media (min-width: 540px){
+.sales-banner-2-text-container{padding-top:20px;}
+}
+@media (min-width: 992px){
+.sales-banner-2-text-container{padding-top:10px;}
+}
+@media (min-width: 1200px){
+.sales-banner-2-text-container{padding-top:20px;}
+}
+.top-line{background-color:#f25d27;min-height:10px;width:auto;}
+.welcome-msg-block{color:white;padding:10px;text-align:center;font-family:'Helvetica Neue LT W05_65 Medium';}
+@media screen and (max-width: 200px){
+.header{font-size:13px;}
+}
+@media screen and (min-width: 200px) and (max-width: 325px){
+.header{font-size:calc(-14.2px + 13.6vw);}
+}
+@media screen and (min-width: 325px) and (max-width: 1920px){
+.header{font-size:calc(25.79639px + 1.29342vw);}
+}
+.product-section{position:relative;}
+.product-section .products-img{margin-top:-70px;height:auto;max-width:100%;}
+.product-section{padding-top:40px;}
+@media screen and (max-width: 900px){
+.product-section .products-img{margin-left:auto;margin-right:auto;width:90%;}
+}
+.product-section .benefits-checklist-cointainer{margin-top:30px;width:100%;}
+@media (min-width: 992px){
+.product-section .benefits-checklist-cointainer{margin-top:0;}
+}
+.product-section .benefits-checklist{display:flex;justify-content:space-around;text-align:left;}
+@media screen and (min-width: 992px){
+.product-section .benefits-checklist{display:block;}
+}
+.product-section .benefits-checklist-title{line-height:1;}
+.benefits-checklist-title{color:#047cd8;font-family:'Viva Beautiful W01 E';font-size:52px;margin-bottom:20px;text-align:center;}
+.benefits-checklist-body{margin-left:0px;padding-left:0px;}
+.benefits-checklist-item{background-image:url(https://www.livegoodtour.com/images/l1/list-image-small.png);background-position:left center;background-repeat:no-repeat;font-family:'Helvetica Neue LT W05_67 Md Cn';font-size:20px;line-height:1.4;list-style-type:none;margin-bottom:8px;padding-left:24px;}
+@media screen and (min-width: 992px){
+.benefits-checklist-title{text-align:left;}
+}
+@media screen and (min-width: 1200px){
+.benefits-checklist-title{font-size:52px;}
+.benefits-checklist-item{font-size:24px;}
+}
+@media screen and (min-width: 1400px){
+.benefits-checklist-title{font-size:60px;}
+.benefits-checklist-item{font-size:28px;}
+}
+.form-section{position:relative;background-color:white;border:1px solid #047dda;border-radius:15px;margin-bottom:20px;margin-top:-15px;padding-left:0px;padding-right:0px;}
+@media (min-width: 992px){
+.form-section{margin-bottom:0;}
+}
+.form-section-top{background-color:#047dda;-webkit-border-top-left-radius:15px;-webkit-border-top-right-radius:15px;-moz-border-radius-topleft:15px;-moz-border-radius-topright:15px;border-top-left-radius:15px;border-top-right-radius:15px;color:white;font-size:16px;line-height:22px;padding:15px;text-align:center;width:100%;}
+.form-section-title{font-size:32px;font-family:'Neue Helvetica W05_79 Comp Bol';line-height:1;margin:0 0 5px 0;padding:0;}
+@media (min-width: 1200px){
+.form-section-title{font-size:36px;}
+}
+.form-section-title-lg-center{display:block;font-size:36px;text-align:center;}
+@media (min-width: 1200px){
+.form-section-title-lg-center{font-size:40px;}
+}
+.form-section-top-disclaimer{font-size:16px;margin-bottom:0;}
+@media (min-width: 1200px){
+.form-section-top-disclaimer{font-size:18px;}
+}
+.main-form{padding:15px;}
+.main-form input{margin-bottom:10px;}
+input[type=submit]{background-image:linear-gradient(to bottom, #f25b25, #d33d08);border:2px solid #bf3200;color:white;font-family:'Helvetica Neue LT W05_97 Blk C';font-size:24px;margin-top:15px;text-transform:uppercase;width:100%;}
+@media (min-width: 992px){
+input[type=submit]{font-size:20px;}
+}
+@media (min-width: 1200px){
+input[type=submit]{font-size:24px;}
+}
+.guy{display:none;}
+@media (min-width: 992px){
+.guy{display:flex;height:100%;margin-left:-20px;}
+.guy img{display:inline-block;align-self:flex-end;width:250px;}
+}
+@media (min-width: 1200px){
+.guy{margin-left:-20px;}
+.guy img{width:300px;}
+}
+.banner-checklist-cointainer{display:flex;justify-content:space-around;margin:20px 0;text-align:left;}
+@media (min-width: 992px){
+.banner-checklist-cointainer{display:block;margin:40px 0 20px 0;}
+}
+.banner-checklist{padding:0;}
+.banner-checklist-item{background-image:url(https://www.livegoodtour.com/images/l1/list-image-small.png);background-position:left center;background-repeat:no-repeat;font-size:24px;font-family:'Helvetica Neue LT W05_67 Md Cn';line-height:1.2;list-style-type:none;margin:0;padding-left:24px;}
+@media (min-width: 1400px){
+.banner-checklist-item{font-size:30px;}
+}
+.video-box{display:flex;border:2px solid #599123;background-color:black;height:288px;justify-content:space-evenly;align-items:center;margin-bottom:50px;text-align:center;width:100%;}
+@media (min-width: 992px){
+.video-box{margin-bottom:30px;}
+}
+.footer{padding:20px 0;text-align:center;}
+/*! CSS Used from: https://use.fontawesome.com/releases/v5.7.2/css/all.css */
+.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-play:before{content:"\f04b";}
+.fas{font-family:"Font Awesome 5 Free";}
+.fas{font-weight:900;}
+/*! CSS Used from: https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.cYEbrOmw59Q.L.W.O/d=0/rs=AN8SPfpU282joXDlbkUblMtWLWoZn4bb2g/m=el_main_css */
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd{z-index:10000002;border:none;position:fixed;box-shadow:0 3px 8px 2px #999;}
+.goog-te-gadget{font-family:arial;font-size:11px;color:#666;white-space:nowrap;}
+.goog-te-gadget img{vertical-align:middle;border:none;}
+.goog-te-gadget-simple{background-color:#FFF;border-left:1px solid #D5D5D5;border-top:1px solid #9B9B9B;border-bottom:1px solid #E8E8E8;border-right:1px solid #D5D5D5;font-size:10pt;display:inline-block;padding-top:1px;padding-bottom:2px;cursor:pointer;}
+.goog-te-gadget-icon{margin-left:2px;margin-right:2px;width:19px;height:19px;border:none;vertical-align:middle;}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed{text-decoration:none;color:#00C;white-space:nowrap;margin-left:4px;margin-right:4px;}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span{text-decoration:underline;}
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img{margin-left:2px;margin-right:2px;}
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed{color:#000;}
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span{text-decoration:none;}
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf{z-index:1000;position:fixed;-webkit-transition-delay:.6s;transition-delay:.6s;left:-1000px;top:-1000px;}
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:104px;height:104px;border-radius:50px;background:#FFF url(https://www.gstatic.com/images/branding/product/2x/translate_24dp.png) 50% 50% no-repeat;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out;-webkit-transform:scale(.4);transform:scale(.4);opacity:0;}
+.VIpgJd-ZVi9od-aZ2wEe{margin:2px 0 0 2px;-webkit-animation:spinner-rotator 1.4s linear infinite;animation:spinner-rotator 1.4s linear infinite;}
+.VIpgJd-ZVi9od-aZ2wEe-Jt5cK{stroke-dasharray:187;stroke-dashoffset:0;stroke:#4285F4;-webkit-transform-origin:center;transform-origin:center;-webkit-animation:spinner-dash 1.4s ease-in-out infinite;animation:spinner-dash 1.4s ease-in-out infinite;}
+.VIpgJd-yAWNEb-L7lbkb div,.VIpgJd-yAWNEb-L7lbkb span,.VIpgJd-yAWNEb-L7lbkb h1,.VIpgJd-yAWNEb-L7lbkb img{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline;text-align:left;line-height:normal;}
+.VIpgJd-yAWNEb-L7lbkb{color:#222;background-color:#FFF;border:1px solid #EEE;box-shadow:0 4px 16px rgba(0,0,0,.2);-moz-box-shadow:0 4px 16px rgba(0,0,0,.2);-webkit-box-shadow:0 4px 16px rgba(0,0,0,.2);display:none;font-family:arial;font-size:10pt;width:420px;padding:12px;position:absolute;z-index:10000;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-nVMfcd-fmcmS{clear:both;font-size:10pt;position:relative;text-align:justify;width:100%;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-r4nke{color:#999;font-family:arial,sans-serif;margin:4px 0;text-align:left;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-l4eHX{float:left;margin:0;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-PLDbbf{display:inline-block;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf{display:none;width:100%;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-H9tDt{margin-top:20px;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-cGMI2b{min-height:15px;position:relative;height:1%;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-jOfkMb-Ne3sFf{background:-webkit-linear-gradient(top,#29910d 0,#20af0e 100%);background:-webkit-gradient(linear,left top,left bottom,from(#29910d),to(#20af0e));background:linear-gradient(top,#29910d 0,#20af0e 100%);background:#29910d;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;box-shadow:inset 0 2px 2px #1E6609;-moz-box-shadow:inset 0 2px 2px #1E6609;-webkit-box-shadow:inset 0 2px 2px #1E6609;color:white;font-size:9pt;font-weight:bolder;margin-top:12px;padding:6px;text-shadow:1px 1px 1px #1E6609;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-hSRGPd{color:#15C;cursor:pointer;font-family:arial;font-size:11px;margin-right:15px;text-decoration:none;}
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-mrxPge{color:#999;font-family:arial,sans-serif;}
+.VIpgJd-yAWNEb-L7lbkb span:focus{outline:none;}
+/*! CSS Used from: Embedded */
+.open-video-popup-link{display:block;height:auto;text-decoration:none;width:100%;}
+.text--green{color:#66a92f;}
+.text--orange{color:#f15a24;}
+.video-box{display:flex;background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(https://www.livegoodtour.com/images/l1/powerline-lander-video-screenshot.jpg?2) no-repeat;background-position:center bottom;background-size:cover;align-items:center;justify-content:space-evenly;text-align:center;}
+@media (min-width: 768px){
+.video-box{height:425px;}
+}
+@media (min-width: 992px){
+.video-box{height:288px;}
+}
+.video-box-btn__play-icon-box{background-color:#ff0000;border:1px solid transparent;border-radius:10px;height:40px;margin:0 auto;width:60px;}
+.video-box-btn__play-icon{color:#fff;font-size:18px;line-height:40px;opacity:1;}
+.youtube-video-embed-container{position:relative;padding-bottom:52.8%;padding-top:30px;height:0;overflow:hidden;}
+.youtube-video-embed-container iframe{border:0;position:absolute;top:0;left:0;width:100%;height:100%;}
+.modal-max-size{max-width:100%;}
+@media (min-width: 576px){
+.modal-max-size{max-width:90%;}
+}
+@media (min-width: 1000px){
+.modal-max-size{margin:0.5rem auto;max-width:900px;}
+}
+#googleTranslateElement{display:inline-block;float:right;padding:10px;}
+/*! CSS Used keyframes */
+@-webkit-keyframes spinner-rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg);}}
+@keyframes spinner-rotator{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(270deg);transform:rotate(270deg);}}
+@-webkit-keyframes spinner-dash{0%{stroke-dashoffset:187;}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg);}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg);}}
+@keyframes spinner-dash{0%{stroke-dashoffset:187;}50%{stroke-dashoffset:46.75;-webkit-transform:rotate(135deg);transform:rotate(135deg);}100%{stroke-dashoffset:187;-webkit-transform:rotate(450deg);transform:rotate(450deg);}}
+/*! CSS Used fontfaces */
+@font-face{font-family:"Neue Helvetica W05_79 Comp Bol";src:url("https://fast.fonts.net/dv2/14/58583898-0494-4579-bafb-d504aa8cc480.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+@font-face{font-family:"Helvetica Neue LT W05_65 Medium";src:url("https://fast.fonts.net/dv2/14/240c57a0-fdce-440d-9ce3-85e0cb56f470.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+@font-face{font-family:"Viva Beautiful W01 E";src:url("https://fast.fonts.net/dv2/14/781b6717-8cbb-48c5-ada1-26a8b1c6cf50.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+@font-face{font-family:"Helvetica Neue LT W05_67 Md Cn";src:url("https://fast.fonts.net/dv2/14/1a559dd9-e51e-45d5-86eb-f343223bacef.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+@font-face{font-family:"Helvetica Neue LT W05_97 Blk C";src:url("https://fast.fonts.net/dv2/14/f2f49a5e-567d-4dfa-8152-c28c8f60c84e.woff2?d44f19a684109620e484157da590e818d4069b168989a9261bfe7912a47b5d410e2b87db1d94918e71f3987141941871eaf9cfd9a5870018ce19385e86872d65a8c45aac9fe99ad3a30917f2728f76c73de000fc428dc4c0a9ee4fd2a8656c9f886147c4d2ed43fa7b4f57b496e224bc2bf122827d2006969fba6a8fd84d3d3538544c7b4e6ed62a9178687a027e&projectId=1332a0dd-3884-468a-bdc0-681ea42c6962") format('woff2');}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:auto;src:url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.eot);src:url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.eot);src:url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.svg#fontawesome) format("svg");}
